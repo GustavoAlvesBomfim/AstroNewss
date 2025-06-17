@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronews - Seu portal de notícias</title>
+    <style>
+        /* Adicione este estilo para desabilitar seleção de texto */
+        body {
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
+        }
+    </style>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,24 +24,21 @@
     </header>
     
     <nav>
-    <div class="container">
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="esportes.html">Esportes</a></li>
-            <li><a href="ciencia.html">Ciência</a></li>
-            <!-- REMOVER ESTA LINHA -->
-        </ul>
-    </div>
-</nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="ciencia.html">Ciência</a></li>
+            </ul>
+        </div>
+    </nav>
     
     <div class="container">
         <div class="main-content">
-            <!-- Seção de Notícias Principais -->
             <section class="featured-news">
                 <h1 class="section-title">Destaques</h1>
                 
                 <article class="main-news">
-                    <!-- MUDAR IMAGEM AQUI -->
                     <img src="WhatsApp Image 2025-06-03 at 08.41.48.jpeg" alt="Feira de Ciências do Colégio">
                     <h2><a href="#">Feira de Ciências</a></h2>
                     <p class="news-summary">Alunos apresentam projetos inovadores na Feira de Ciências anual do Colégio Astrogildo de Arruda.</p>
@@ -40,7 +46,6 @@
                 </article>
             </section>
             
-            <!-- Seção de Esportes -->
             <section class="sports-news">
                 <h1 class="section-title">Esportes <span style="font-size: 1rem;">(JESP)</span></h1>
                 
@@ -65,7 +70,6 @@
                 </article>
             </section>
             
-            <!-- Seção de Ciências -->
             <section class="science-news">
                 <h1 class="section-title">Ciências <span style="font-size: 1rem;">(Feira do Colégio Astrogildo de Arruda)</span></h1>
                 
@@ -102,9 +106,4 @@
                 <a href="#">Política de privacidade</a>
             </div>
             <div class="copyright">
-                &copy; 2023 Astronews - Todos os direitos reservados
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+                &copy; 2023 Astronews -
